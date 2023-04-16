@@ -1,0 +1,563 @@
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link href="https://zionswap.netlify.app/logo.png" rel="icon" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <meta content="#000000" name="theme-color" />
+    <meta
+      content="RAMSES is the native liquidity layer &amp; decentralized exchange on #arbitrum"
+      name="description"
+    />
+    <link href="https://zionswap.netlify.app/logo.png" rel="apple-touch-icon" />
+    <link href="/manifest.json" rel="manifest" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/flowbite@1.5.5/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <style>
+      .custom-cross {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 18px;
+        text-align: center;
+        font-weight: bold;
+        border-radius: 50%;
+        background-color: #ccc;
+        color: #fff;
+        cursor: pointer;
+      }
+
+      .custom-cross:hover {
+        background-color: #888;
+      }
+      body {
+        background-color: rgb(8, 6, 11) !important;
+      }
+    </style>
+    <script src="https://unpkg.com/flowbite@1.5.5/dist/flowbite.js"></script>
+    <title>Ramses LGE Event</title>
+    <script defer="defer" src="./static/js/main.68683e88.js"></script>
+    <link href="./static/css/main.21212390.css" rel="stylesheet" />
+  </head>
+  <body data-new-gr-c-s-check-loaded="14.1104.0" data-gr-ext-installed="">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="rootg">
+      <div
+        class="xl:px-32 md:px-12 px-6 relative pt-24 pb-10 min-h-screen m-auto max-w-screen-2xl"
+      >
+        <div class="mb-8">
+          <div
+            class="absolute top-8 left-0 w-full m-auto max-w-screen-2xl xl:px-32 md:px-12 px-6"
+          >
+            <nav class="border-gray-200 dark:bg-gray-900 dark:border-gray-700">
+              <div class="flex items-center justify-between mx-0">
+                <a
+                  href="#"
+                  class="flex flex--1 justify-center w-64 flex-col gap-2 items-start"
+                  ><img
+                    src="https://zionswap.netlify.app/mainlogo.png"
+                    class="h-6 mr-3 sm:h-10"
+                    alt="Ramses logo"
+                  />
+                  <p class="block md:hidden text-gray100">
+                    Liquidity Generation Event
+                  </p></a
+                >
+                <p class="hidden md:hidden text-gray100 flex--1 text-center">
+                  Liquidity Generation Event
+                </p>
+                <div
+                  class="flex--1 flex justify-end md:w-auto"
+                  id="navbar-dropdown"
+                >
+                  <ul
+                    class="flex flex-col p-4 pr-0 mt-4 rounded-lg md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0"
+                  >
+                    <li>
+                      <div>
+                        <button
+                          data-testid="wallet-connect"
+                          class="btn-primary btn-default rounded-xl"
+                          onclick="display()"
+                        >
+                          Connect Wallet
+                        </button>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+        <header class="flex flex-col lg:flex-row justify-between gap-4">
+          <div class="home-card">
+            <p class="text-3xl text-white mb-4 font-bold">
+              Event <span class="text-lg">ends in</span>
+            </p>
+            <div class="flex justify-between items-center">
+              <div class=" ">
+                <div class="flex justify-start gap-2 text-2xl font-semibold">
+                  <p class="time text-center text-primary">00d</p>
+                  <p class="time text-center text-primary">00h</p>
+                  <p class="time text-center text-primary">00m</p>
+                </div>
+              </div>
+              <a
+                target="_blank"
+                rel="noopener noreferrer"
+                href="https://docs.ramses.exchange/ram-tokenomics/ram-fair-auction-lge-liquidity-generation-event"
+                class="read-more-link text-xl text-gray100/50 hidden"
+                >Read more
+                <img
+                  class="pl-1 pb-1 w-[14px] opacity-50 inline-block"
+                  src="./static/media/external-link.3695bb6888db131994d94b43a9454be6.svg"
+              /></a>
+            </div>
+          </div>
+          <div class="home-card">
+            <p class="text-3xl text-white mb-4 font-bold">
+              RAM <span class="text-lg">Price</span>
+            </p>
+            <p class="text-2xl text-primary font-semibold">$0.0419</p>
+          </div>
+          <div class="home-card flex justify-between gap-4 items-center">
+            <div>
+              <p class="text-3xl text-white mb-4 font-bold">
+                ETH <span class="text-lg">Raised</span>
+              </p>
+              <p class="text-2xl text-primary font-semibold">200</p>
+            </div>
+            <img
+              class="w-12"
+              style="height: 100; width: 150;"
+
+              src="https://altcoinsbox.com/wp-content/uploads/2022/10/ethereum-logo-.webp"
+            />
+          </div>
+        </header>
+        <main class="flex flex-col lg:flex-row gap-4 mt-8">
+          <div class="home-card flex justify-center items-center">
+            <div
+              class="recharts-responsive-container"
+              width="423"
+              height="338"
+              style="width: 100%; height: 100%"
+            >
+              <div
+                class="recharts-wrapper"
+                role="region"
+                style="
+                  position: relative;
+                  cursor: default;
+                  width: 423px;
+                  height: 338px;
+                "
+              >
+                <svg
+                  class="recharts-surface"
+                  width="423"
+                  height="338"
+                  viewBox="0 0 423 338"
+                >
+                  <title></title>
+                  <desc></desc>
+                  <defs>
+                    <clipPath id="recharts1-clip">
+                      <rect x="44" y="8" height="322" width="371"></rect>
+                    </clipPath>
+                  </defs>
+                  <defs>
+                    <linearGradient id="fill" x1="0" y1="0" x2="1" y2="0">
+                      <stop
+                        offset="0%"
+                        stop-color="#ffffff"
+                        stop-opacity="1"
+                      ></stop>
+                      <stop
+                        offset="100%"
+                        stop-color="#D4AD60"
+                        stop-opacity="1"
+                      ></stop>
+                    </linearGradient>
+                  </defs>
+                  <g
+                    class="recharts-layer recharts-cartesian-axis recharts-yAxis yAxis"
+                  >
+                    <g class="recharts-cartesian-axis-ticks">
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="322"
+                          x="36"
+                          y="330"
+                          stroke="none"
+                          fill="#666"
+                          font-size="12px"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                        >
+                          <tspan x="36" dy="0.355em">0.5</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="322"
+                          x="36"
+                          y="232.02839756592294"
+                          stroke="none"
+                          fill="#666"
+                          font-size="12px"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                        >
+                          <tspan x="36" dy="0.355em">15.5</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="322"
+                          x="36"
+                          y="134.05679513184583"
+                          stroke="none"
+                          fill="#666"
+                          font-size="12px"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                        >
+                          <tspan x="36" dy="0.355em">30.5</tspan>
+                        </text>
+                      </g>
+                      <g class="recharts-layer recharts-cartesian-axis-tick">
+                        <text
+                          orientation="left"
+                          width="60"
+                          height="322"
+                          x="36"
+                          y="8"
+                          stroke="none"
+                          fill="#666"
+                          font-size="12px"
+                          class="recharts-text recharts-cartesian-axis-tick-value"
+                          text-anchor="end"
+                        >
+                          <tspan x="36" dy="0.355em">49.8</tspan>
+                        </text>
+                      </g>
+                    </g>
+                  </g>
+                  <g class="recharts-cartesian-grid">
+                    <g class="recharts-cartesian-grid-horizontal">
+                      <line
+                        stroke=""
+                        fill="none"
+                        x="44"
+                        y="8"
+                        width="371"
+                        height="322"
+                        offset="[object Object]"
+                        x1="44"
+                        y1="330"
+                        x2="415"
+                        y2="330"
+                      ></line>
+                      <line
+                        stroke=""
+                        fill="none"
+                        x="44"
+                        y="8"
+                        width="371"
+                        height="322"
+                        offset="[object Object]"
+                        x1="44"
+                        y1="232.02839756592294"
+                        x2="415"
+                        y2="232.02839756592294"
+                      ></line>
+                      <line
+                        stroke=""
+                        fill="none"
+                        x="44"
+                        y="8"
+                        width="371"
+                        height="322"
+                        offset="[object Object]"
+                        x1="44"
+                        y1="134.05679513184583"
+                        x2="415"
+                        y2="134.05679513184583"
+                      ></line>
+                      <line
+                        stroke=""
+                        fill="none"
+                        x="44"
+                        y="8"
+                        width="371"
+                        height="322"
+                        offset="[object Object]"
+                        x1="44"
+                        y1="8"
+                        x2="415"
+                        y2="8"
+                      ></line>
+                    </g>
+                  </g>
+                  <g class="recharts-layer recharts-area">
+                    <g class="recharts-layer">
+                      <path
+                        stroke-width="2"
+                        fill-opacity="0.75"
+                        fill="rgb(49, 179, 188)"
+                        width="371"
+                        height="322"
+                        stroke="none"
+                        class="recharts-curve recharts-area-area"
+                        d="M44,330C45.249,325.101,46.498,320.203,47.747,320.203C48.997,320.203,50.246,323.469,51.495,323.469C52.744,323.469,53.993,316.937,55.242,316.937C56.492,316.937,57.741,326.734,58.99,326.734C60.239,326.734,61.488,315.849,62.737,313.671C63.987,311.494,65.236,312.039,66.485,310.406C67.734,308.773,68.983,304.419,70.232,303.874C71.481,303.33,72.731,303.602,73.98,303.058C75.229,302.514,76.478,298.704,77.727,296.526C78.976,294.349,80.226,292.172,81.475,289.995C82.724,287.818,83.973,284.465,85.222,283.463C86.471,282.462,87.721,282.756,88.97,281.961C90.219,281.167,91.468,279.458,92.717,278.696C93.966,277.934,95.215,277.705,96.465,277.389C97.714,277.074,98.963,277.193,100.212,276.801C101.461,276.41,102.71,272.447,103.96,270.27C105.209,268.093,106.458,264,107.707,263.739C108.956,263.477,110.205,263.608,111.455,263.347C112.704,263.085,113.953,261.714,115.202,260.081C116.451,258.448,117.7,255.182,118.949,253.549C120.199,251.917,121.448,251.372,122.697,250.284C123.946,249.195,125.195,248.107,126.444,247.018C127.694,245.929,128.943,244.841,130.192,243.752C131.441,242.664,132.69,241.575,133.939,240.487C135.189,239.398,136.438,238.309,137.687,237.221C138.936,236.132,140.185,235.153,141.434,233.955C142.684,232.758,143.933,231.234,145.182,230.036C146.431,228.839,147.68,228.403,148.929,226.771C150.178,225.138,151.428,220.239,152.677,220.239C153.926,220.239,155.175,223.505,156.424,223.505C157.673,223.505,158.923,219.423,160.172,217.3C161.421,215.177,162.67,212.401,163.919,210.769C165.168,209.136,166.418,207.503,167.667,207.503C168.916,207.503,170.165,210.769,171.414,210.769C172.663,210.769,173.912,205.919,175.162,204.296C176.411,202.673,177.66,202.663,178.909,201.03C180.158,199.397,181.407,194.499,182.657,194.499C183.906,194.499,185.155,197.764,186.404,197.764C187.653,197.764,188.902,193.982,190.152,192.539C191.401,191.097,192.65,189.11,193.899,189.11C195.148,189.11,196.397,190.743,197.646,190.743C198.896,190.743,200.145,187.205,201.394,185.845C202.643,184.484,203.892,183.517,205.141,182.579C206.391,181.641,207.64,181.153,208.889,180.214C210.138,179.276,211.387,178.582,212.636,176.949C213.886,175.316,215.135,170.417,216.384,170.417C217.633,170.417,218.882,173.683,220.131,173.683C221.38,173.683,222.63,168.784,223.879,167.152C225.128,165.519,226.377,165.519,227.626,163.886C228.875,162.253,230.125,157.354,231.374,157.354C232.623,157.354,233.872,160.62,235.121,160.62C236.37,160.62,237.62,146.453,238.869,146.453C240.118,146.453,241.367,148.631,242.616,149.719C243.865,150.808,245.114,152.985,246.364,152.985C247.613,152.985,248.862,145.043,250.111,143.188C251.36,141.333,252.609,141.413,253.859,140.405C255.108,139.397,256.357,138.228,257.606,137.14C258.855,136.051,260.104,134.962,261.354,133.874C262.603,132.785,263.852,131.367,265.101,130.608C266.35,129.849,267.599,129.726,268.848,129.322C270.098,128.917,271.347,128.913,272.596,128.178C273.845,127.444,275.094,125.892,276.343,124.913C277.593,123.933,278.842,124.042,280.091,122.3C281.34,120.558,282.589,112.797,283.838,112.797C285.088,112.797,286.337,119.296,287.586,119.296C288.835,119.296,290.084,112.247,291.333,109.531C292.582,106.815,293.832,103,295.081,103C296.33,103,297.579,106.266,298.828,106.266C300.077,106.266,301.327,95.587,302.576,95.587C303.825,95.587,305.074,99.734,306.323,99.734C307.572,99.734,308.822,94.101,310.071,92.321C311.32,90.541,312.569,90.144,313.818,89.055C315.067,87.967,316.316,86.992,317.566,85.789C318.815,84.587,320.064,81.838,321.313,81.838C322.562,81.838,323.811,82.524,325.061,82.524C326.31,82.524,327.559,80.592,328.808,79.552C330.057,78.512,331.306,77.911,332.556,76.286C333.805,74.661,335.054,70.062,336.303,69.8C337.552,69.539,338.801,69.409,340.051,69.409C341.3,69.409,342.549,73.02,343.798,73.02C345.047,73.02,346.296,67.833,347.545,66.143C348.795,64.452,350.044,64.695,351.293,62.877C352.542,61.059,353.791,55.235,355.04,55.235C356.29,55.235,357.539,57.772,358.788,58.501C360.037,59.23,361.286,59.611,362.535,59.611C363.785,59.611,365.034,53.238,366.283,51.31C367.532,49.382,368.781,49.677,370.03,48.044C371.279,46.411,372.529,43.69,373.778,41.513C375.027,39.336,376.276,34.981,377.525,34.981C378.774,34.981,380.024,38.247,381.273,38.247C382.522,38.247,383.771,33.887,385.02,31.716C386.269,29.544,387.519,25.217,388.768,25.217C390.017,25.217,391.266,28.45,392.515,28.45C393.764,28.45,395.013,18.509,396.263,18.509C397.512,18.509,398.761,21.951,400.01,21.951C401.259,21.951,402.508,16.906,403.758,15.243C405.007,13.581,406.256,13.175,407.505,11.978C408.754,10.78,410.003,8.059,411.253,8.059C412.502,8.059,413.751,8.385,415,8.712L415,330C413.751,330,412.502,330,411.253,330C410.003,330,408.754,330,407.505,330C406.256,330,405.007,330,403.758,330C402.508,330,401.259,330,400.01,330C398.761,330,397.512,330,396.263,330C395.013,330,393.764,330,392.515,330C391.266,330,390.017,330,388.768,330C387.519,330,386.269,330,385.02,330C383.771,330,382.522,330,381.273,330C380.024,330,378.774,330,377.525,330C376.276,330,375.027,330,373.778,330C372.529,330,371.279,330,370.03,330C368.781,330,367.532,330,366.283,330C365.034,330,363.785,330,362.535,330C361.286,330,360.037,330,358.788,330C357.539,330,356.29,330,355.04,330C353.791,330,352.542,330,351.293,330C350.044,330,348.795,330,347.545,330C346.296,330,345.047,330,343.798,330C342.549,330,341.3,330,340.051,330C338.801,330,337.552,330,336.303,330C335.054,330,333.805,330,332.556,330C331.306,330,330.057,330,328.808,330C327.559,330,326.31,330,325.061,330C323.811,330,322.562,330,321.313,330C320.064,330,318.815,330,317.566,330C316.316,330,315.067,330,313.818,330C312.569,330,311.32,330,310.071,330C308.822,330,307.572,330,306.323,330C305.074,330,303.825,330,302.576,330C301.327,330,300.077,330,298.828,330C297.579,330,296.33,330,295.081,330C293.832,330,292.582,330,291.333,330C290.084,330,288.835,330,287.586,330C286.337,330,285.088,330,283.838,330C282.589,330,281.34,330,280.091,330C278.842,330,277.593,330,276.343,330C275.094,330,273.845,330,272.596,330C271.347,330,270.098,330,268.848,330C267.599,330,266.35,330,265.101,330C263.852,330,262.603,330,261.354,330C260.104,330,258.855,330,257.606,330C256.357,330,255.108,330,253.859,330C252.609,330,251.36,330,250.111,330C248.862,330,247.613,330,246.364,330C245.114,330,243.865,330,242.616,330C241.367,330,240.118,330,238.869,330C237.62,330,236.37,330,235.121,330C233.872,330,232.623,330,231.374,330C230.125,330,228.875,330,227.626,330C226.377,330,225.128,330,223.879,330C222.63,330,221.38,330,220.131,330C218.882,330,217.633,330,216.384,330C215.135,330,213.886,330,212.636,330C211.387,330,210.138,330,208.889,330C207.64,330,206.391,330,205.141,330C203.892,330,202.643,330,201.394,330C200.145,330,198.896,330,197.646,330C196.397,330,195.148,330,193.899,330C192.65,330,191.401,330,190.152,330C188.902,330,187.653,330,186.404,330C185.155,330,183.906,330,182.657,330C181.407,330,180.158,330,178.909,330C177.66,330,176.411,330,175.162,330C173.912,330,172.663,330,171.414,330C170.165,330,168.916,330,167.667,330C166.418,330,165.168,330,163.919,330C162.67,330,161.421,330,160.172,330C158.923,330,157.673,330,156.424,330C155.175,330,153.926,330,152.677,330C151.428,330,150.178,330,148.929,330C147.68,330,146.431,330,145.182,330C143.933,330,142.684,330,141.434,330C140.185,330,138.936,330,137.687,330C136.438,330,135.189,330,133.939,330C132.69,330,131.441,330,130.192,330C128.943,330,127.694,330,126.444,330C125.195,330,123.946,330,122.697,330C121.448,330,120.199,330,118.949,330C117.7,330,116.451,330,115.202,330C113.953,330,112.704,330,111.455,330C110.205,330,108.956,330,107.707,330C106.458,330,105.209,330,103.96,330C102.71,330,101.461,330,100.212,330C98.963,330,97.714,330,96.465,330C95.215,330,93.966,330,92.717,330C91.468,330,90.219,330,88.97,330C87.721,330,86.471,330,85.222,330C83.973,330,82.724,330,81.475,330C80.226,330,78.976,330,77.727,330C76.478,330,75.229,330,73.98,330C72.731,330,71.481,330,70.232,330C68.983,330,67.734,330,66.485,330C65.236,330,63.987,330,62.737,330C61.488,330,60.239,330,58.99,330C57.741,330,56.492,330,55.242,330C53.993,330,52.744,330,51.495,330C50.246,330,48.997,330,47.747,330C46.498,330,45.249,330,44,330Z"
+                      ></path>
+                      <path
+                        stroke="url(#fill)"
+                        stroke-width="2"
+                        fill-opacity="0.75"
+                        fill="none"
+                        width="371"
+                        height="322"
+                        class="recharts-curve recharts-area-curve"
+                        d="M44,330C45.249,325.101,46.498,320.203,47.747,320.203C48.997,320.203,50.246,323.469,51.495,323.469C52.744,323.469,53.993,316.937,55.242,316.937C56.492,316.937,57.741,326.734,58.99,326.734C60.239,326.734,61.488,315.849,62.737,313.671C63.987,311.494,65.236,312.039,66.485,310.406C67.734,308.773,68.983,304.419,70.232,303.874C71.481,303.33,72.731,303.602,73.98,303.058C75.229,302.514,76.478,298.704,77.727,296.526C78.976,294.349,80.226,292.172,81.475,289.995C82.724,287.818,83.973,284.465,85.222,283.463C86.471,282.462,87.721,282.756,88.97,281.961C90.219,281.167,91.468,279.458,92.717,278.696C93.966,277.934,95.215,277.705,96.465,277.389C97.714,277.074,98.963,277.193,100.212,276.801C101.461,276.41,102.71,272.447,103.96,270.27C105.209,268.093,106.458,264,107.707,263.739C108.956,263.477,110.205,263.608,111.455,263.347C112.704,263.085,113.953,261.714,115.202,260.081C116.451,258.448,117.7,255.182,118.949,253.549C120.199,251.917,121.448,251.372,122.697,250.284C123.946,249.195,125.195,248.107,126.444,247.018C127.694,245.929,128.943,244.841,130.192,243.752C131.441,242.664,132.69,241.575,133.939,240.487C135.189,239.398,136.438,238.309,137.687,237.221C138.936,236.132,140.185,235.153,141.434,233.955C142.684,232.758,143.933,231.234,145.182,230.036C146.431,228.839,147.68,228.403,148.929,226.771C150.178,225.138,151.428,220.239,152.677,220.239C153.926,220.239,155.175,223.505,156.424,223.505C157.673,223.505,158.923,219.423,160.172,217.3C161.421,215.177,162.67,212.401,163.919,210.769C165.168,209.136,166.418,207.503,167.667,207.503C168.916,207.503,170.165,210.769,171.414,210.769C172.663,210.769,173.912,205.919,175.162,204.296C176.411,202.673,177.66,202.663,178.909,201.03C180.158,199.397,181.407,194.499,182.657,194.499C183.906,194.499,185.155,197.764,186.404,197.764C187.653,197.764,188.902,193.982,190.152,192.539C191.401,191.097,192.65,189.11,193.899,189.11C195.148,189.11,196.397,190.743,197.646,190.743C198.896,190.743,200.145,187.205,201.394,185.845C202.643,184.484,203.892,183.517,205.141,182.579C206.391,181.641,207.64,181.153,208.889,180.214C210.138,179.276,211.387,178.582,212.636,176.949C213.886,175.316,215.135,170.417,216.384,170.417C217.633,170.417,218.882,173.683,220.131,173.683C221.38,173.683,222.63,168.784,223.879,167.152C225.128,165.519,226.377,165.519,227.626,163.886C228.875,162.253,230.125,157.354,231.374,157.354C232.623,157.354,233.872,160.62,235.121,160.62C236.37,160.62,237.62,146.453,238.869,146.453C240.118,146.453,241.367,148.631,242.616,149.719C243.865,150.808,245.114,152.985,246.364,152.985C247.613,152.985,248.862,145.043,250.111,143.188C251.36,141.333,252.609,141.413,253.859,140.405C255.108,139.397,256.357,138.228,257.606,137.14C258.855,136.051,260.104,134.962,261.354,133.874C262.603,132.785,263.852,131.367,265.101,130.608C266.35,129.849,267.599,129.726,268.848,129.322C270.098,128.917,271.347,128.913,272.596,128.178C273.845,127.444,275.094,125.892,276.343,124.913C277.593,123.933,278.842,124.042,280.091,122.3C281.34,120.558,282.589,112.797,283.838,112.797C285.088,112.797,286.337,119.296,287.586,119.296C288.835,119.296,290.084,112.247,291.333,109.531C292.582,106.815,293.832,103,295.081,103C296.33,103,297.579,106.266,298.828,106.266C300.077,106.266,301.327,95.587,302.576,95.587C303.825,95.587,305.074,99.734,306.323,99.734C307.572,99.734,308.822,94.101,310.071,92.321C311.32,90.541,312.569,90.144,313.818,89.055C315.067,87.967,316.316,86.992,317.566,85.789C318.815,84.587,320.064,81.838,321.313,81.838C322.562,81.838,323.811,82.524,325.061,82.524C326.31,82.524,327.559,80.592,328.808,79.552C330.057,78.512,331.306,77.911,332.556,76.286C333.805,74.661,335.054,70.062,336.303,69.8C337.552,69.539,338.801,69.409,340.051,69.409C341.3,69.409,342.549,73.02,343.798,73.02C345.047,73.02,346.296,67.833,347.545,66.143C348.795,64.452,350.044,64.695,351.293,62.877C352.542,61.059,353.791,55.235,355.04,55.235C356.29,55.235,357.539,57.772,358.788,58.501C360.037,59.23,361.286,59.611,362.535,59.611C363.785,59.611,365.034,53.238,366.283,51.31C367.532,49.382,368.781,49.677,370.03,48.044C371.279,46.411,372.529,43.69,373.778,41.513C375.027,39.336,376.276,34.981,377.525,34.981C378.774,34.981,380.024,38.247,381.273,38.247C382.522,38.247,383.771,33.887,385.02,31.716C386.269,29.544,387.519,25.217,388.768,25.217C390.017,25.217,391.266,28.45,392.515,28.45C393.764,28.45,395.013,18.509,396.263,18.509C397.512,18.509,398.761,21.951,400.01,21.951C401.259,21.951,402.508,16.906,403.758,15.243C405.007,13.581,406.256,13.175,407.505,11.978C408.754,10.78,410.003,8.059,411.253,8.059C412.502,8.059,413.751,8.385,415,8.712"
+                      ></path>
+                    </g>
+                  </g>
+                </svg>
+                <div
+                  tabindex="-1"
+                  role="dialog"
+                  class="recharts-tooltip-wrapper"
+                  style="
+                    pointer-events: none;
+                    visibility: hidden;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    transform: translate(178.383px, 155px);
+                  "
+                ></div>
+              </div>
+            </div>
+          </div>
+          <div class="home-card py-10">
+            <div class="">
+              <div class="bg-gray00 rounded-xl px-4 py-4 flex justify-center">
+                <input
+                  type="number"
+                  placeholder="0.0"
+                  class="bg-gray00 text-white !focus:outline-0 !outline-0 !border-0 focus:ring-0 !focus:shadow-none shadow-none w-full text-2xl"
+                  value=""
+                />
+                <div class="flex flex-col items-end">
+                  <div class="flex justify-between">
+                    <div class="max-container flex gap-2 items-center">
+                      <p class="text-white"></p>
+                      <div>
+                        <button
+                          class="!bg-[#212020] text-primary rounded-md px-2 py-1 text-xs font-semibold"
+                        >
+                          Max
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="input-token-label mt-4">
+                    <div
+                      class="flex justify-end gap-2 p-1 rounded-lg bg-[#000]/25"
+                    >
+                      <p
+                        class="text-white text-md text-gray100/50 rounded-md px-2 cursor-pointer transition duration-300 bg-primary text-black font-semibold"
+                      >
+                        ETH
+                      </p>
+                      <p
+                        class="text-white text-md text-gray100/50 rounded-md px-2 cursor-pointer transition duration-300"
+                      >
+                        WETH
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="px-1 pt-2">
+              <div class="flex justify-between">
+                <p class="text-gray100/25">Your allocation</p>
+                <p class="text-white">0.5 ETH</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-gray100/25">Deposited</p>
+                <p class="text-white">... ETH</p>
+              </div>
+              <div class="flex justify-between">
+                <p class="text-gray100/25">Remaining allocation</p>
+                <p class="text-white">... ETH</p>
+              </div>
+            </div>
+            <button class="btn-primary btn-large mt-16 w-full element-disabled">
+              Auction ended
+            </button>
+          </div>
+        </main>
+      </div>
+    </div>
+    <span
+      id="recharts_measurement_span"
+      aria-hidden="true"
+      style="
+        position: absolute;
+        top: -20000px;
+        left: 0px;
+        padding: 0px;
+        margin: 0px;
+        border: none;
+        white-space: pre;
+      "
+      >0</span
+    >
+    <div id="headlessui-portal-root" style="display: none">
+      <div data-headlessui-portal="">
+        <button
+          type="button"
+          aria-hidden="true"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0px;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0px, 0px, 0px, 0px);
+            white-space: nowrap;
+            border-width: 0px;
+          "
+        ></button>
+        <div>
+          <div
+            class="relative z-50"
+            id="headlessui-dialog-:r15:"
+            role="dialog"
+            aria-modal="true"
+            aria-labelledby="headlessui-dialog-title-:r19:"
+          >
+            <div class="fixed inset-0 bg-black bg-opacity-25 opacity-100"></div>
+            <div class="fixed inset-0 overflow-y-auto">
+              <div
+                class="flex min-h-full items-center justify-center p-4 text-center"
+              >
+                <div
+                  class="undefined max-w-md w-full transform overflow-hidden rounded-2xl bg-white p-6 text-left align-middle shadow-xl transition-all opacity-100 scale-100"
+                  id="headlessui-dialog-panel-:r18:"
+                >
+                  <h3
+                    class="relative text-lg font-medium leading-6 text-gray-900 mb-8"
+                    id="headlessui-dialog-title-:r21:"
+                  >
+                    Connect Wallet
+                    <div class="absolute -right-1 -top-2 p-2 cursor-pointer">
+                      <span class="custom-cross" onclick="closeModal()">x</span>
+                    </div>
+                  </h3>
+                  <div
+                    data-testid="wallet-modal-option"
+                    class="btn-primary-inverted rounded-xl mb-3 py-3 cursor-pointer"
+                  >
+                    <a href="https://metamask.io/" class="px-5 justify-between items-center w-full flex">
+                      <p>Install MetaMask</p>
+                      <div
+                        class="bg-white rounded-lg p-2 shadow-xl flex justify-center items-center"
+                      >
+                        <img
+                          alt="wallet"
+                          class="h-6 w-6"
+                          src="./static/media/metamask.ae0cb7627bcccdfc9e7c2faedce57ffe.svg"
+                        />
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    data-testid="wallet-modal-option"
+                    class="btn-primary-inverted rounded-xl mb-3 py-3 cursor-pointer"
+                  >
+                    <div class="px-5 justify-between items-center w-full flex">
+                      <p>Coinbase Wallet</p>
+                      <div
+                        class="bg-white rounded-lg p-2 shadow-xl flex justify-center items-center"
+                      >
+                        <img
+                          alt="wallet"
+                          class="h-6 w-6"
+                          src="./static/media/coinbase-wallet.a3a7d7fd2e88e9cbec769e827507b863.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    data-testid="wallet-modal-option"
+                    class="btn-primary-inverted rounded-xl mb-3 py-3 cursor-pointer"
+                  >
+                    <div class="px-5 justify-between items-center w-full flex">
+                      <p>WalletConnect</p>
+                      <div
+                        class="bg-white rounded-lg p-2 shadow-xl flex justify-center items-center"
+                      >
+                        <img
+                          alt="wallet"
+                          class="h-6 w-6"
+                          src="./static/media/wallet-connect.dfa25e470b69d81428be54242b6c9bd1.svg"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="opacity-0 absolute bottom-0" tabindex="0"></button>
+          </div>
+        </div>
+        <button
+          type="button"
+          aria-hidden="true"
+          style="
+            position: absolute;
+            width: 1px;
+            height: 1px;
+            padding: 0px;
+            margin: -1px;
+            overflow: hidden;
+            clip: rect(0px, 0px, 0px, 0px);
+            white-space: nowrap;
+            border-width: 0px;
+          "
+        ></button>
+      </div>
+    </div>
+  </body>
+  <script>
+    const display = () => {
+      document.getElementById("headlessui-portal-root").style.display = "block";
+    };
+    const closeModal = () => {
+      document.getElementById("headlessui-portal-root").style.display = "none";
+    };
+  </script>
+  <grammarly-desktop-integration
+    data-grammarly-shadow-root="true"
+  ></grammarly-desktop-integration>
+</html>
